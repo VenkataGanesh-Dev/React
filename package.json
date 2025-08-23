@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "learning react",
   "scripts": {
-  
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
   },
   "repository": {
     "type": "git",
@@ -23,5 +24,12 @@
   "homepage": "https://github.com/VenkataGanesh-Dev/React-gani#readme",
   "devDependencies": {
     "parcel": "^2.15.4"
-  }
+  },
+  "dependencies": {
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  },
+  "browserslist": [ 
+    "Last 2 version"
+  ]
 }

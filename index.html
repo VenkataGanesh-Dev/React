@@ -9,10 +9,9 @@
 <body>
  
 
-
   <h1>hello top of root</h1>
   <div id="root"> 
-    <h1>iam here suriya</h1>  <!-- this h1 is replaced(y it is replace means  it will execute 1st  because it is un the 1stlines of code and and after that it goes to script tags and change it ) by the parent ,because it has the elements that is return in js -->
+    <h1>NOT RENDERED</h1>  <!-- this h1 is replaced(y it is replace means  it will execute 1st  because it is un the 1stlines of code and and after that it goes to script tags and change it ) by the parent ,because it has the elements that is return in js -->
   </div>
   <h1>hello bottom of root</h1>
 
@@ -26,16 +25,15 @@
     heading.innerHTML = 'hello world from javascript!';
 
     const root =  document.getElementById('root');
-    root.appendChild(heading);
+    root.appendChild(heading); 
 
   </script> -->
-<!-- 
 
-  <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
-<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script> -->
 
-<script src="./App.js">  // This must be write under the links only ,if we write above it will through an array
+  
 
+<script type="module" src="./App.js">  // This must be write under the links only ,if we write above it will through an array
+  // why we are writing type module in this because it is not a normal file 
 </script>
   
 </body>
