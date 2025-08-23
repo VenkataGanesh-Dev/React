@@ -1,5 +1,5 @@
 import React, { createElement } from "react"; // THIS REACT CAME FROM THE NODE MODULES
-import ReactDOM from "react-dom/client"; // THIS REACTDOM CAME FROM THE NODE MODULES
+import ReactDOM, { createRoot } from "react-dom/client"; // THIS REACTDOM CAME FROM THE NODE MODULES
 
 // /*
 //  <div id="parent">
@@ -86,6 +86,7 @@ import ReactDOM from "react-dom/client"; // THIS REACTDOM CAME FROM THE NODE MOD
 
 // root.render(jsxHeading);
 
+// ---This is React Element---
 // const jsxHeading = (
 //   <h1 className="heading" tabIndex="5">
 //     React using JSX
@@ -96,20 +97,49 @@ import ReactDOM from "react-dom/client"; // THIS REACTDOM CAME FROM THE NODE MOD
 
 // root.render(jsxHeading);
 
-
 // -----React component----
 // 1) class based component(old way)
 // 2) functional component(New way)
 
-
 // functional component-
 
-const fn = (a,b) => {a*b};
-                                 // both are same 
-const fn1 = (a,b) => {
-  return a*b;
+// const fn = (a,b) => {a*b};
+//                                  // both are same
+// const fn1 = (a,b) => {
+//   return a*b;
+// }
+
+// ---React component---- 1) write in captial letter (Title) & 2) write use the normal function & Arrow Function
+
+const Title = () => (
+  <h1 className="head">React Functional Component </h1> // both are same
+);
+
+const Heading1 = () => {
+  return <div id="container1">
+            <h1 className="heading11">React Functional Component (suriya)</h1>
+         </div>
+};
+
+const number = 1000;
+
+const Heading = () => (
+  <div id="container">
+        <Heading1 />   {/* Component composition- putting another component inside a component */}
+       {Title}
+    <h1 className="heading1">React Functional (lee) Component </h1>
+    {number}
+    <h2>{100 + 200}{console.log('ERWIN')}</h2>
+  </div>
+);
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
+root.render(<Heading />);
+
+// We can write the react component with normal function
+const hea = function () {
+  <h1 className="titled">hello lee</h1>
 }
 
-const Heading1 = ()=> {
-  return <h1>React Functional Component </h1>
-}
+
