@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+ 
+
+  <h1>hello top of root</h1>
+  <div id="root"> 
+    <h1>NOT RENDERED</h1>  <!-- this h1 is replaced(y it is replace means  it will execute 1st  because it is un the 1stlines of code and and after that it goes to script tags and change it ) by the parent ,because it has the elements that is return in js -->
+  </div>
+  <h1>hello bottom of root</h1>
+
+
+  <!-- <script>
+
+    //Creating the basic html using the javascript
+
+
+    const heading = document.createElement("h1");
+    heading.innerHTML = 'hello world from javascript!';
+
+    const root =  document.getElementById('root');
+    root.appendChild(heading); 
+
+  </script> -->
+
+
+  
+
+<script type="module" src="./App.js">  // This must be write under the links only ,if we write above it will through an array
+  // why we are writing type module in this because it is not a normal file 
+</script>
+  
+</body>
+</html>
