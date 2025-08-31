@@ -49,7 +49,15 @@ const Restaurantcard = () => {
       className="res-card"
       // style={StyleCard} THIS IS INLINE CSS IN JSX
     >
+      <img
+        className="res-logo"
+        alt="res-logo"
+        src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/FOOD_CATALOG/IMAGES/CMS/2024/10/9/314c4e34-0188-4d84-b7e1-90085a8d0634_e21c30e9-8eb7-4605-bf80-275ba966f768.JPG"
+      />
       <h3>Meghana Foods</h3>
+      <h4>Briyani,North Indian,Asia</h4>
+      <h4>4.4 Stars</h4>
+      <h4>23 MIN</h4>
     </div>
   );
 };
@@ -58,8 +66,10 @@ const Body = () => {
   return (
     <div className="body">
       <div className="search">Search</div>
-      <div className="restaurant-container"></div>
+      <div className="restaurant-container">
       <Restaurantcard />
+      <Restaurantcard />
+      </div>
     </div>
   );
 };
@@ -73,8 +83,11 @@ const AppLayout = () => {
   );
 };
 
-
-
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(<AppLayout />);
+
+
+
+
+// kndsv/lmflk;b
