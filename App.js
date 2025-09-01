@@ -67,7 +67,7 @@ const Body = () => {
     <div className="body">
       <div className="search">Search</div>
       <div className="restaurant-container">
-      <Restaurantcard />
+      <Restaurantcard resName/>
       <Restaurantcard />
       </div>
     </div>
@@ -87,7 +87,3 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(<AppLayout />);
 
-
-
-
-// kndsv/lmflk;b
