@@ -67,8 +67,9 @@ const Body = () => {
     <div className="body">
       <div className="search">Search</div>
       <div className="restaurant-container">
-      <Restaurantcard resName/>
-      <Restaurantcard />
+        <Restaurantcard resName />
+        <Restaurantcard />
+        
       </div>
     </div>
   );
@@ -86,4 +87,3 @@ const AppLayout = () => {
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(<AppLayout />);
-
