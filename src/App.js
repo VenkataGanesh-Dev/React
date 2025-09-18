@@ -1,7 +1,7 @@
 import React, { createElement } from "react";
 import ReactDOM, { createRoot } from "react-dom/client";
-import Header from "./components/header";
-import Body from "../src/components/Body";
+import  Header  from "./components/Header";
+import Body from "./components/Body.js";
 
 /**
  * Header
@@ -18,8 +18,6 @@ import Body from "../src/components/Body";
  *  -Address
  *  -contact
  */
-
-
 
 const AppLayout = () => {
   return (
