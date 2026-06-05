@@ -1,5 +1,5 @@
 import RestaurantCard from "./RestaurantCard";
-import { useEffect, useState } from "react";
+import { useEffect, useState } from "react";  // named import
 import resList from "../../utils/mockData.js";
 
 // not using keys (not acceptable) <<< index as key <<<< unique id (best practise)
@@ -15,11 +15,11 @@ const [ListOfRestaurants, setListOfRestaurant] = useState([]);
   // console.log("body rendered");  // Body is rendered first and that useEffect is rendered
 
 
-  // const fetchData = ()  => {
-  //   const data = [fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=17.3843&lng=78.4583&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING")]
-  // }
+  const fetchData = ()  => {
+    const data = [fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=17.3843&lng=78.4583&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING")]
+  }
 
-
+  
 
 
 
