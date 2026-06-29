@@ -1,11 +1,10 @@
 import RestaurantCard from "./RestaurantCard";
 import { useEffect, useState } from "react";  // named import
-import resList from "../../utils/mockData.js";
 
 // not using keys (not acceptable) <<< index as key <<<< unique id (best practise)
 let Body = () => {
   // Local state variable - super powerful variable
-const [ListOfRestaurants, setListOfRestaurant] = useState(resList);
+const [ListOfRestaurants, setListOfRestaurant] = useState([]);   // This is an empty array
 
   useEffect(() => { 
     fetchData();    // Use to fetch the data 
@@ -23,7 +22,8 @@ const [ListOfRestaurants, setListOfRestaurant] = useState(resList);
 
     const json = await data.json();
 
-    console.log(json);
+    console.log(json); 
+    setListOfRestaurant(json.data.cards[4].card.card.gridElements.infoWithStyle.restaurants);
 };
 
   // Call fetchData()
